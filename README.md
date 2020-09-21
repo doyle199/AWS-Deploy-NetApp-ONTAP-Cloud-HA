@@ -61,3 +61,85 @@ Choose the correct VPC and a different subnet in different AZs for node1, node2,
 For connectivity and SSH authentication, choose the connection methods for the HA pair and the mediator and click continue.
 
 ![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/connectivity.png)
+
+Choose floating IP addresses outside of the VPC range for cluster management, and two addresses for NFS and CIFS data, click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/flooting_IPS.png)
+
+Select the route tables that should include the floating IP addresses and click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/route_tables.png)
+
+Choose how one wants to manage encryption and select continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/encryption.png)
+
+Choose a Cloud Volumes ONTAP License and click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/license.png)
+
+Select a preconfigured package or choose create my own configuration. This guide will choose my own configuration.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/packages.png)
+
+For the IAM role, leave the defaults and click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/IAM.png)
+
+Choose the correct licensing options and click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/size.png)
+
+Choose the correct underlying storage resources and click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/storage.png)
+
+WORM can be enabled if tiering is disabled. Click continue.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/WORM.png)
+
+Enter the volume details, protection, and protocol and click continue or click skip.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/volume.png)
+
+Check the two acknowledgement boxes, review, and click go.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/review.png)
+
+In order to use the product, one must accept terms and subscribe. Click the link in the popup.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/sub-8.png)
+
+Click continue to subscribe. Click accept terms.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/Sub9.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/accept.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/sub10.png)
+
+Navigate back to NetApp and click go again.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/fail1.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/fail2.png)
+
+If it fails because of one of these errors check to security groups. Then create VPC endpoint connections to EC2 and S3.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/create_endpoint.png)
+
+Choose AWS services, enter S3 into the search and select it. Choose the correct rout tables and click create endpoint, do the same for EC2.
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/create_endpoint2.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/endpoint_3.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/endpoint4.png)
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/endpoint5.png)
+
+Success
+
+![alt text](https://github.com/doyle199/AWS-Deploy-NetApp-ONTAP-Cloud-HA/blob/master/ONTAP%20HA.png)
+
+
